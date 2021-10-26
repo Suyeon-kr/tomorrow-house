@@ -1,6 +1,10 @@
 %avatar-base {
   display: block;
   overflow: hidden;
+  background-image: url(/assets/images/img-user-default.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 50%;
 
   img {
