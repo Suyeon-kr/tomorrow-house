@@ -2,11 +2,12 @@
   $padding: 8px;
 
   position: relative;
+  background-color: $white;
   border-bottom: 1px solid $border;
 
   &-wrapper {
     @include flexbox(between);
-    height: 50px;
+    height: $gnb-height-sm - 1px;
   }
 
   &-right {
@@ -32,6 +33,10 @@
   }
 
   @include responsive(T) {
+    &-wrapper {
+      height: $gnb-height-md - 1px;
+    }
+
     &-left {
       @include flexbox(start);
     }
@@ -48,6 +53,7 @@
 
         .gnb-auth {
           margin-left: 8px;
+
           a {
             @include text-style(14, $secondary);
             font-weight: 700;
@@ -62,9 +68,6 @@
           }
         }
       }
-    }
-    &-wrapper {
-      height: 80px;
     }
 
     .logo {
@@ -81,11 +84,13 @@
     }
     .btn-primary {
       width: 88px;
+
       i {
         margin-left: 4px;
       }
     }
   }
+
   @include responsive(D) {
     &-search {
       width: 264px;
