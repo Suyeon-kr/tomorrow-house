@@ -17,6 +17,18 @@
     }
   }
 
+  .order-checkout {
+    margin-bottom: 20px;
+
+    .checkout-item {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .button-group {
     @include flexbox(between);
     margin-bottom: 40px;
