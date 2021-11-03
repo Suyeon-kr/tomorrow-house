@@ -1,6 +1,5 @@
 .lnb {
   $lnb-link-padding: 8px;
-  $grid-margin: $sm-margin + $gutter / 2;
 
   background-color: $white;
   overflow-x: auto;
@@ -11,7 +10,7 @@
     @include inline-flexbox;
     padding: 0 #{$grid-margin - $lnb-link-padding};
     height: $lnb-height-sm;
-    margin-left: -$grid-margin;
+    margin-left: -#{$grid-margin};
     white-space: nowrap;
     border-bottom: 1px solid $border;
   }
