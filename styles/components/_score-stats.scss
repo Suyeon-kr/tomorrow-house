@@ -15,6 +15,7 @@
         color: $blue;
       }
     }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -35,12 +36,13 @@
         overflow: hidden;
 
         .active-bar {
-          width: 30px;
+          width: 0;
           height: 5px;
           background-color: $blue;
           border-radius: (5px/2);
         }
       }
+
       .count {
         font-weight: 400;
       }
