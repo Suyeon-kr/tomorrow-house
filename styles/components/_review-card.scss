@@ -16,33 +16,46 @@
       margin-right: 8px;
     }
 
-    .info {
-      .user-name {
-        strong {
-          @include text-style(13, $primary);
-          font-weight: 400;
-        }
+    .user-name {
+      @include text-style(13, $primary);
+
+      strong {
+        font-weight: 400;
+      }
+    }
+
+    .detail {
+      @include flexbox(start);
+      @include text-style(12, $secondary);
+
+      .star-rating-13 {
+        margin-right: 4px;
       }
 
-      .detail {
-        @include flexbox(start);
-
-        .star-rating-13 {
-          margin-right: 4px;
-        }
-        .misc {
-          @include text-style(12, $secondary);
-
-          time::after {
-            content: '∙';
-          }
-        }
+      time::after {
+        content: '∙';
       }
     }
   }
 
   &-body {
     margin-bottom: 20px;
+
+    .review-image {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 8px;
+      overflow: hidden;
+      border-radius: 4px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
     p {
       @include text-style(13, $primary);
     }
@@ -52,8 +65,15 @@
     @include flexbox(start);
 
     button {
-      margin-right: 8px;
       width: 120px;
+      margin-right: 8px;
+
+      i {
+        font-size: 20px;
+        color: $white;
+        margin-right: 4px;
+        margin-left: -4px;
+      }
     }
 
     p {
@@ -82,6 +102,12 @@
     }
 
     &-body {
+      .review-image {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 16px;
+      }
+
       p {
         @include text-style(14);
       }
