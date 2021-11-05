@@ -50,7 +50,14 @@
       font-weight: 700;
     }
     p {
+      @include flexbox(start);
       color: $primary;
+
+      i {
+        font-style: 16px;
+        margin-right: 8px;
+        color: $tertiary;
+      }
     }
   }
 
