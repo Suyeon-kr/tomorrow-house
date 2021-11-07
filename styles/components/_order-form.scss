@@ -31,7 +31,6 @@
 
   .button-group {
     @include flexbox(between);
-    margin-bottom: 40px;
 
     button {
       width: 100%;
